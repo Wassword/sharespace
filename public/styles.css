@@ -9,7 +9,7 @@ body {
   a {
     color: #1DA1F2;
     text-decoration: none;
-  }
+  } 
   
   h1, h2, h3, h4, h5, h6 {
     color: #14171A;
@@ -25,7 +25,20 @@ body {
     background-color: #FFFFFF;
     border-bottom: 1px solid #E1E8ED;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .logo-container {
+    position: absolute;
+    left: 20px;
+  }
+  
+  .logo-container .logo {
+    width: 40px;
+    height: 40px;
   }
   
   .header h1 {
@@ -40,14 +53,14 @@ body {
   }
   
   .sidebar {
-    flex: 1;
+    flex: 0 0 5%;
     padding: 20px;
     background-color: #FFFFFF;
     border-right: 1px solid #E1E8ED;
   }
   
   .main-content {
-    flex: 2;
+    flex: 1;
     padding: 20px;
     background-color: #FFFFFF;
   }
@@ -159,7 +172,15 @@ body {
     cursor: pointer;
   }
   
-
+  .button:hover {
+    background-color: #004080;
+  }
   
-  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E1E8ED;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
   
