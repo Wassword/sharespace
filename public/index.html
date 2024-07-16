@@ -6,6 +6,7 @@
   <title>ShareSpace</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="header">
@@ -14,18 +15,16 @@
     </div>
   </div>
 
-  <div class="content">
-    <div class="sidebar">
-      <h2>Profile</h2>
-      <p>@username</p>
-      <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Search</a>
-        <a href="#">Notifications</a>
-        <a href="#">Indox</a>
-      </div>
+  <div class="sidebar">
+    <h2>Profile</h2>
+    <p>@username</p>
+    <div class="navbar">
+      <a href="#"><i class="fas fa-home"></i> Home</a>
+      <a href="#"><i class="fas fa-compass"></i> Explore</a>
+      <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+      <a href="#"><i class="fas fa-envelope"></i> Messages</a>
     </div>
-    
+  </div>
     <div class="main-content">
       <div class="write-post">
         <textarea placeholder="Write a post..."></textarea>
@@ -33,36 +32,36 @@
       </div>
       <div class="tweet">
         <div class="tweet-header">
-          <img src="profilepic.jpg" alt="ProfilePic1" width="50" height="50">
+          <img src="avatar.jpg" alt="Avatar" width="50" height="50">
           <div>
             <span class="username">John Doe</span>
             <span class="handle">@johndoe</span>
           </div>
         </div>
         <div class="tweet-content">
-          <p>This is sample blog post content.</p>
+          <p>This is a sample tweet content.</p>
         </div>
         <div class="tweet-footer">
           <button class="button">Like</button>
-          <button class="button">Repost</button>
+          <button class="button">Retweet</button>
           <button class="button">Reply</button>
         </div>
       </div>
       
       <div class="tweet">
         <div class="tweet-header">
-          <img src="profilepic2.jpg" alt="ProfilePic2" width="50" height="50">
+          <img src="avatar2.jpg" alt="Avatar" width="50" height="50">
           <div>
             <span class="username">Jane Doe</span>
             <span class="handle">@janedoe</span>
           </div>
         </div>
         <div class="tweet-content">
-          <p>This is sample blog post content.</p>
+          <p>Another sample tweet content.</p>
         </div>
         <div class="tweet-footer">
           <button class="button">Like</button>
-          <button class="button">Repost</button>
+          <button class="button">Retweet</button>
           <button class="button">Reply</button>
         </div>
       </div>
@@ -71,9 +70,13 @@
 
   <div class="footer">
     <p>&copy; 2024 ShareSpace. All rights reserved.</p>
+    <button class="settings-button">
+      <i class="fas fa-cog"></i> Settings
+    </button>
   </div>
 </body>
 </html>
+
 
 
 
