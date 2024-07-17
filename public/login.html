@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #add8e6; /* Light blue background */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #121212;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 400px;
+            max-width: 90%; 
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            width: 150px; 
+            height: auto; 
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            box-sizing: border-box; 
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #1DA1F2;
+            color: #fff;
+            margin-top: 15px; 
+            box-sizing: border-box; 
+        }
+
+        .forgot-password-btn, .toggle-form-btn {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: transparent;
+            color: #1DA1F2;
+            text-decoration: none;
+            box-sizing: border-box; 
+        }
+
+        .sign-in-options {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .sign-in-option {
+            cursor: pointer;
+        }
+
+        .divider {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #333;
+        }
+
+        .divider::before {
+            margin-right: 10px;
+        }
+
+        .divider::after {
+            margin-left: 10px;
+        }
+
+        .link-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .link-group a {
+            color: #1DA1F2;
+            text-decoration: none;
+            margin: 5px 0; /
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo2.png" alt="Logo" class="logo">
+        <h2 id="form-title">Sign in</h2>
+
+        <div id="sign-in-form">
+        
+            <div class="input-group">
+                <input type="text" placeholder="Phone, email, or username">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+            <button class="btn">Next</button>
+            <div class="link-group">
+                <a href="#" class="forgot-password-btn">Forgot password?</a>
+                <a href="#" class="toggle-form-btn" onclick="toggleForm()">Don't have an account?</a>
+                <a href="#" class="toggle-form-btn" onclick="toggleForm()">Sign up</a>
+            </div>
+        </div>
+
+        <div id="sign-up-form" style="display: none;">
+            <div class="input-group">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+            <button class="btn">Sign Up</button>
+            <div class="link-group">
+                <a href="#" class="toggle-form-btn" onclick="toggleForm()">Already have an account?</a>
+                <a href="#" class="toggle-form-btn" onclick="toggleForm()">Sign in</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>
