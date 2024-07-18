@@ -119,6 +119,52 @@ const deletePost = (index) => {
     
 }
 
+const searchPosts = () => {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const filteredPosts = newPosts.filter(post => 
+        post.content.toLowerCase().includes(searchInput) || 
+        post.username.toLowerCase().includes(searchInput) || 
+        post.handle.toLowerCase().includes(searchInput)
+    );
+    displayFilteredPosts(filteredPosts);
+};
+
+const displayFilteredPosts = (posts) => {
+    list.innerHTML = '';
+    posts.forEach((post, index) => {
+        list.innerHTML += `
+            <li id="post-${index}">
+                <div class="tweet">
+                    <div class="tweet-header">
+                        <img src="${post.profilePic}" alt="ProfilePic1" width="50" height="50">
+                        <div>
+                            <span class="username">${post.username}</span>
+                            <span class="handle">${post.handle}</span>
+                            
+                        </div>
+                        <div id="buttonBox">
+                            <button class="button edit-button" onclick="editPost(${index})"></button>
+                            <button class="button delete-button" onclick="deletePost(${index})"></button>
+                        </div>
+                    </div>
+                    <span class="tweet-content" id="content-${index}">
+                        ${post.content}
+                    </span>
+                    <div class="tweet-footer">
+                        <button class="button like-button" onclick="likePost(this)">Like</button>
+                        <button class="button retweet-button" onclick="retweetPost(this)">Retweet</button>
+                        <button class="button reply-button" onclick="replyPost(this)">Reply</button>
+                    </div>
+                    <div class="reply-section" style="display: none;">
+                        <form class="reply-form">
+                            <textarea name="replyContent" placeholder="Write a reply..."></textarea>
+                            <button type="submit" class="button">Post Reply</button>
+                        </form>
+                    </div>
+                </div>
+            </li>`;
+    });
+};
 
 
 postBtn.addEventListener('click', createPost);
