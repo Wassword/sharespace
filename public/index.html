@@ -6,41 +6,34 @@
   <title>ShareSpace</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <div class="header">
       <div class="logo-container">
         <img src="indexlogo1.jpg" alt="ShareSpace Logo" class="logo">
-      </div>
-      
-      <h1>ShareSpace</h1>
-      
         <div class="search-bar">
           <input type="text" id="searchInput" placeholder="Search posts...">
           <button class="searchBtn" onclick="searchPosts()">Search</button>
         </div>
+      </div>
+      <div><h1>ShareSpace</h1></div>
+      
+      
       
     </div>
 
     <div class="content">
       <div class="sidebar">
-        <a href="http://127.0.0.1:3000/public/Profile.html" class="back-button"><span class="arrow-icon"><i class="fas fa-arrow-left"></i></span>Profile</a>
-        <h2>Profile</h2>
-        <p id="username" ></p>
+        <p>@AceVentura</p>
         <div class="navbar">
+          <a href="Profile.html">Profile</a>
+
           <a href="index.html"><i class="fas fa-home"></i> Home</a>
           <a href="#"><i class="fas fa-compass"></i> Explore</a>
           <a href="#"><i class="fas fa-bell"></i> Notifications</a>
           <a href="#"><i class="fas fa-envelope"></i> Messages</a>
-          
-
-          <div id="user-info"></div>
-          <button onclick="logOut()">Log Out</button>
-      </div>
         </div>
       </div>
 
@@ -63,19 +56,10 @@
       <p>&copy; 2024 ShareSpace. All rights reserved.</p>
       <button class="settings-button">
         <i class="fas fa-cog"></i> Settings
-        
-  
       </button>
     </div>
   </div>
 
   <script src="script.js"></script>
-  <script src="login.js"></script>
 </body>
 </html>
-
-
-
-
-
-

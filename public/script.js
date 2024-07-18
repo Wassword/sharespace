@@ -54,9 +54,9 @@ const createPost = (event) => {
     // i had to set is as an object to be able to iterate through the posts
     const newPost = {
         content: postVals.value,
-        username: 'John Doe',
-        handle: '@johndoe',
-        profilePic: 'images/employee_image_mikno49.jpeg'
+        username: 'Ave Ventura',
+        handle: '@Aceventura',
+        profilePic: 'ace.jpg'
     };
     newPosts.push(newPost)//pushing the post to the array 
     localStorage.setItem("newPosts", JSON.stringify(newPosts));//setting the new posts in local storage
