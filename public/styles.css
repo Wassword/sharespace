@@ -38,17 +38,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-container {
     position: absolute;
-    left: 20px;
+    left: 30px;
 }
 
 .logo-container .logo {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
 }
 
 .header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.0em;
+    color: white; 
+    text-align: center;
     margin: 0;
     color: #1DA1F2;
+    width: 20px;
+    height: 70px;
+}
+.search {
+    max-width: 200px;
+    text-align: right;
+
 }
 
 .content {
@@ -77,6 +88,15 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
 }
+.user-info {
+    background-color: #1DA1F2;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 
 .settings-button {
     background-color: #1DA1F2;
