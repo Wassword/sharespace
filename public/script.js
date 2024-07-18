@@ -39,6 +39,18 @@ let newPosts = JSON.parse(localStorage.getItem("newPosts")) || [];//makes sure t
 const createPost = (event) => {
     event.preventDefault();
 
+    const content = postVals.value.trim();
+    if (content === '') {
+        alert('Error: Content cannot be empty.');
+        return;
+    }
+
+    if (content.length > 255) {
+        alert('Error: Content exceeds the 255 character limit.');
+        return;
+    }
+
+
     // i had to set is as an object to be able to iterate through the posts
     const newPost = {
         content: postVals.value,
@@ -72,6 +84,8 @@ const getAllPosts = () => {
                             <button class="button delete-button" onclick="deletePost(${index})"></button>
                         </div>
                     </div>
+                    <br>
+                    
                     <span class="tweet-content" id="content-${index}">
                         ${post.content}
                     </span>
@@ -91,34 +105,40 @@ const getAllPosts = () => {
     });
 };
 
+//edit post base on the index of content in newpost and returning an html elemnt for text area and a sumbit button
 const editPost = (index) => {
     const contentElement = document.getElementById(`content-${index}`);
-    if (contentElement) {
         const post = newPosts[index];
         contentElement.innerHTML = `
             <textarea id="editContent-${index}">${post.content}</textarea>
             <button class="button save-button" onclick="savePost(${index})">Save</button>
         `;
-    } else {
-        console.error(`Element with ID content-${index} not found.`);
-    }
 };
 
 const savePost = (index) => {
-    const editedContent = document.getElementById(`editContent-${index}`).value;
+    const editedContent = document.getElementById(`editContent-${index}`).value.trim();
+    if (editedContent === '') {
+        alert('Error: Content cannot be empty.')
+        return;
+    }
+    if (editedContent.length > 255) {
+        alert('Error: Content exceeds the 255 character limit.')
+        return;
+    }
     newPosts[index].content = editedContent;
     localStorage.setItem("newPosts", JSON.stringify(newPosts));
     getAllPosts();
 };
 
+//deleting the post by the index of the newPost
 const deletePost = (index) => {
-    // if (confirm("Are you sure you want to delete this post?")) {
         newPosts.splice(index, 1);
         localStorage.setItem("newPosts", JSON.stringify(newPosts));
         getAllPosts();
     
 }
 
+// searching posts using filter
 const searchPosts = () => {
     const searchInput = document.getElementById('searchInput').value.toLowerCase();
     const filteredPosts = newPosts.filter(post => 
@@ -129,6 +149,7 @@ const searchPosts = () => {
     displayFilteredPosts(filteredPosts);
 };
 
+// once the search has completed return the elements that match the content and insert them back into html
 const displayFilteredPosts = (posts) => {
     list.innerHTML = '';
     posts.forEach((post, index) => {
@@ -137,16 +158,19 @@ const displayFilteredPosts = (posts) => {
                 <div class="tweet">
                     <div class="tweet-header">
                         <img src="${post.profilePic}" alt="ProfilePic1" width="50" height="50">
+                        
                         <div>
+                            
                             <span class="username">${post.username}</span>
                             <span class="handle">${post.handle}</span>
-                            
                         </div>
                         <div id="buttonBox">
                             <button class="button edit-button" onclick="editPost(${index})"></button>
                             <button class="button delete-button" onclick="deletePost(${index})"></button>
                         </div>
                     </div>
+                    
+                    <br>
                     <span class="tweet-content" id="content-${index}">
                         ${post.content}
                     </span>
