@@ -86,3 +86,38 @@ const deletePost = () => {
 
 }
 
+    // Search btn feature inside explore 
+
+    document.getElementById('explore-btn').addEventListener('click', function() {
+        document.getElementById('explore-modal').style.display = 'block';
+    });
+    
+    document.getElementsByClassName('close')[0].addEventListener('click', function() {
+        document.getElementById('explore-modal').style.display = 'none';
+    });
+    
+    window.addEventListener('click', function(event) {
+        if (event.target == document.getElementById('explore-modal')) {
+        document.getElementById('explore-modal').style.display = 'none';
+        }
+    });
+    
+    document.getElementById('search-input').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const tweets = document.querySelectorAll('.tweet');
+            const resultsContainer = document.getElementById('search-results');
+            resultsContainer.innerHTML = '';
+        
+            tweets.forEach(tweet => {
+            const tweetContent = tweet.querySelector('.tweet-content').textContent.toLowerCase();
+            if (tweetContent.includes(query)) {
+                resultsContainer.appendChild(tweet.cloneNode(true));
+            }
+            });
+        
+            if (!resultsContainer.innerHTML) {
+            resultsContainer.innerHTML = '<p>No results found.</p>';
+            }
+        });
+    
+
