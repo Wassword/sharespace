@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+li {
+    list-style-type: none;
+}
+
 a {
     color: #1DA1F2;
     text-decoration: none;
