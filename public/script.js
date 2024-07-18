@@ -27,7 +27,7 @@ function postReply(button) {
 }
 
 
-// Get eleements
+// Get elements
 const postBtn = document.getElementsByClassName('postBtn')[0];  // I had to had the index of 0 because the buttons were getting the live elements of the page 
 const formSub = document.getElementsByClassName('write-post')[0];  
 const postVals = document.getElementById('postVals');  
@@ -68,7 +68,7 @@ const createPost = (event) => {
     newPost.forEach(() => {
         localStorage.setItem("newPost", newPost)
     })
-   
+
 };
 console.log(list.innerHTML)
 postBtn.addEventListener('click', createPost);

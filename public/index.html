@@ -27,6 +27,8 @@
     margin-right: 5px; /* Adjust spacing between icon and text */
   }
 </style>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -36,21 +38,30 @@
         <img src="indexlogo1.jpg" alt="ShareSpace Logo" class="logo">
        
       </div>
+      
       <h1>ShareSpace</h1>
     </div>
 
     <div class="content">
       <div class="sidebar">
-        <a href="http://127.0.0.1:3000/public/Profile.html" class="back-button"><span class="arrow-icon"><i class="fas fa-arrow-left"></i></span> Profile</a>
-        <h2>Ace Ventura</h2>
-        <p>@AceVentura</p>
+        <a href="http://127.0.0.1:3000/public/Profile.html" class="back-button"><span class="arrow-icon"><i class="fas fa-arrow-left"></i></span>Profile</a>
+        <h2>Profile</h2>
+        <p id="username" ></p>
         <div class="navbar">
           <a href="#"><i class="fas fa-home"></i> Home</a>
           <a href="#"><i class="fas fa-compass"></i> Explore</a>
           <a href="#"><i class="fas fa-bell"></i> Notifications</a>
           <a href="#"><i class="fas fa-envelope"></i> Messages</a>
+          
+
+          <div id="user-info"></div>
+          <button onclick="logOut()">Log Out</button>
+      </div>
         </div>
       </div>
+      <div class="input-group">
+      
+    </div>
 
       <div class="main-content">
         <div class="write-post">
@@ -61,8 +72,9 @@
         <div class="tweet">
           <div class="tweet-header">
             <img src="images/employee_image_mikno49.jpeg" alt="ProfilePic1" width="50" height="50">
+            <img src="images/employee_image_mikno49.jpeg" alt="ProfilePic1" width="50" height="50">
             <div>
-              <span class="username">John Doe</span>
+              <span class="username"></span>
               <span class="handle">@johndoe</span>
             </div>
           </div>
@@ -86,11 +98,14 @@
       <p>&copy; 2024 ShareSpace. All rights reserved.</p>
       <button class="settings-button">
         <i class="fas fa-cog"></i> Settings
+        
+  
       </button>
     </div>
   </div>
 
   <script src="script.js"></script>
+  <script src="login.js"></script>
 </body>
 </html>
 
