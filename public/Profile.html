@@ -5,83 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <!-- Profile header content: profile picture, cover photo, user details -->
-        <div class="profile-header">
-            <img src="/public/ace.jpeg" alt="Ace Ventura" width="400" height="400">
-            <h1>Ace Ventura</h1>
-            <p>@AceVentura</p>
-            <p>Bio: "Pet detective extraordinaire 🕵️‍♂️🐾 | Lover of all animals (especially dolphins!) 🐬 | Saving the world, one furry friend at a time 🌍 | #AceVentura #PetDetective"</p>
-            <p>Location: Miami, Florida</p>
-            <p>Website: <a href="#">VenturaPetDetective.com</a></p>
-            <button>Edit Profile</button>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="indexlogo1.jpg" alt="ShareSpace Logo" class="logo">
+            </div>
+            <h1>ShareSpace</h1>
         </div>
-    </header>
 
-    <main>
-        <section class="tweets">
-            <!-- Tweet feed: individual tweets with details -->
-            <div class="tweet">
-                <p>"If you need me, I'll be swimming with the dolphins today! 🐬🌊 #AnimalLove #OceanLife"</p>
-                <p>Likes: 10, Retweets: 5</p>
-            </div>
-            <div class="tweet">
-                <p>"Can't believe someone tried to steal Mrs. Harris's prize poodle! Not on my watch. 🐩🔍 #JusticeForPets"</p>
-                <p>Likes: 15, Retweets: 7</p>
-            </div>
-            <!-- Repeat similar structure for more tweets -->
-        </section>
-
-        <aside class="sidebar">
-            <!-- Sidebar content: trends, follow suggestions, etc. -->
-            <div class="trends">
-                <h2>Trending Topics</h2>
-                <ul>
-                    <li>#PetDetectiveAdventures<br>Exploring mysterious cases and reuniting pets with their owners.</li><br>
-                    <li>#WildlifeConservation<br>Protecting endangered species and their habitats worldwide.</li><br>
-                    <li>#DolphinLove<br>Celebrating the intelligence and beauty of dolphins.</li><br>
-                    <li>#JusticeForPets<br>Advocating for animal rights and tougher laws against animal cruelty.</li>
-                    <!-- Add more trending topics as needed -->
-                </ul>
-            </div>
-            <div class="follow-suggestions">
-                <h2>Who to Follow</h2>
-                <div class="user">
-                    <img src="\public\Emilio.webp" alt="Emilio" width="48" height="48">
-                    <div>
-                        <h3>Emilio</h3>
-                        <p>@Emilio_Security_for_hire</p>
-                    </div>
-                    <button>Follow</button>
-                </div><br>
-                <div class="user">
-                    <img src="\public\Dan-Marino.jpg" alt="Dan Marino" width="48" height="48">
-                    <div>
-                        <h3>Dan Marino</h3>
-                        <p>@DanMarino</p>
-                    </div>
-                    <button>Follow</button>
+        <div class="content">
+            <div class="sidebar">
+                <img scr="ace.jpg" alt="Ace Picture" class="profile pic">
+                <div class="navbar">
+                    <a href="#"><i class="fas fa-home"></i> Home</a>
+                    <a href="#"><i class="fas fa-compass"></i> Explore</a>
+                    <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+                    <a href="#"><i class="fas fa-envelope"></i> Messages</a>
                 </div>
-                <!-- Add more follow suggestions as needed -->
             </div>
-        </aside>
-    </main>
 
-    <footer>
-        <!-- Footer content: links, copyright information -->
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Messages</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2024 ShareSpace. All rights reserved.</p>
-    </footer>
+            <div class="main-content">
+                <h2>Ace Ventura</h2>
+                <p>@AceVentura</p>
+                <p>Bio: "Pet detective extraordinaire 🕵️‍♂️🐾 | Lover of all animals (especially dolphins!) 🐬 | Saving the world, one furry friend at a time 🌍 | #AceVentura #PetDetective"</p>
+                <p>Location: Miami, Florida</p>
+                <dive
+                </div>
+
+                <div class="tweets">
+                    <div class="tweet">
+                        <p>"If you need me, I'll be swimming with the dolphins today! 🐬🌊 #AnimalLove #OceanLife"</p>
+                        <p>Likes: 10, Retweets: 5</p>
+                    </div>
+                    <div class="tweet">
+                        <p>"Can't believe someone tried to steal Mrs. Harris's prize poodle! Not on my watch. 🐩🔍 #JusticeForPets"</p>
+                        <p>Likes: 15, Retweets: 7</p>
+                    </div>
+                    <!-- Repeat similar structure for more tweets -->
+                </div>
+
+                <div class="trends">
+                    <h2>Trending Topics</h2>
+                    <ul>
+                        <li>#PetDetectiveAdventures<br>Exploring mysterious cases and reuniting pets with their owners.</li><br>
+                        <li>#WildlifeConservation<br>Protecting endangered species and their habitats worldwide.</li><br>
+                        <li>#DolphinLove<br>Celebrating the intelligence and beauty of dolphins.</li><br>
+                        <li>#JusticeForPets<br>Advocating for animal rights and tougher laws against animal cruelty.</li>
+                        <!-- Add more trending topics as needed -->
+                    </ul>
+                </div>
+
+                <div class="follow-suggestions">
+                    <h2>Who to Follow</h2>
+                    <div class="user">
+                        <img src="\public\Emilio.webp" alt="Emilio" width="48" height="48">
+                        <div>
+                            <h3>Emilio</h3>
+                            <p>@Emilio_Security_for_hire</p>
+                        </div>
+                        <button>Follow</button>
+                    </div><br>
+                    <div class="user">
+                        <img src="\public\Dan-Marino.jpg" alt="Dan Marino" width="48" height="48">
+                        <div>
+                            <h3>Dan Marino</h3>
+                            <p>@DanMarino</p>
+                        </div>
+                        <button>Follow</button>
+                    </div>
+                    <!-- Add more follow suggestions as needed -->
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 ShareSpace. All rights reserved.</p>
+            <button class="settings-button">
+                <i class="fas fa-cog"></i> Settings
+            </button>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
+
