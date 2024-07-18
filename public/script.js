@@ -193,6 +193,3 @@ const displayFilteredPosts = (posts) => {
 
 postBtn.addEventListener('click', createPost);
 document.addEventListener("DOMContentLoaded",getAllPosts)
-// document.addEventListener('DOMContentLoaded', () => {
-//     getAllPosts();
-// });
