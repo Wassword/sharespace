@@ -6,7 +6,8 @@
   <title>ShareSpace</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-vItZNBDuQqzofN9AVOlCz4lJ3F0BMJvK6jYpHjbyPbKW8zqgtgwZrdwXv9bQy3MR+jv1NmHB6ZL3Kqb7JMP3eg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
   <div class="container">
@@ -29,7 +30,7 @@
         </div>
       </div>
 
-      <!-- <div class="main-content">
+      <div class="main-content">
         <div class="write-post">
           <textarea placeholder="Write a post..."></textarea>
           <button class="button">Post</button>
@@ -44,8 +45,7 @@
             </div>
           </div>
           <div class="tweet-content">
-            <p>"The Phoenix Project" is a novel that applies lean and agile principles to a DevOps scenario, illustrating how to improve workflow, quality, and security in IT operations through an engaging and humorous narrative.</p>
-            <p>The book, recommended by a CISO, follows a protagonist who, with the help of a mentor and supportive colleagues, navigates through IT challenges, offering readers a mix of relatable frustrations and encouraging wins that make it a compelling read for anyone working or managing in IT.</p>
+            
           </div>
           <div class="tweet-footer">
             <button class="button like-button" onclick="likePost(this)">Like</button>
@@ -57,64 +57,9 @@
             <button class="button" onclick="postReply(this)">Post Reply</button>
           </div>
         </div>
-      </div> -->
-      <div class="main-content">
-        <form class="write-post">
-          <textarea id="postVals" name="postContent" placeholder="Write a post..."></textarea>
-          <button class="postBtn" type="submit" >Post</button>
-        </form>
-        <ul id="list">
-          <li>
-          <div class="tweet">
-            <div class="tweet-header">
-              <img src="employee_image_mikno49.jpeg" alt="ProfilePic1" width="50" height="50">
-              <div>
-                <span class="username">John Doe</span>
-                <span class="handle">@johndoe</span>
-              </div>
-            </div>
-            <span class="tweet-content">
-              "The Phoenix Project" is a novel that applies lean and agile principles to a DevOps scenario, illustrating how to improve workflow, quality, and security in IT operations through an engaging and humorous narrative.
-            </span>
-            <div class="tweet-footer">
-              <button class="button like-button" onclick="likePost(this)">Like</button>
-              <button class="button retweet-button" onclick="retweetPost(this)">Retweet</button>
-              <button class="button reply-button" onclick="replyPost(this)">Reply</button>
-            </div>
-            <div class="reply-section" style="display: none;">
-              <form class="reply-form">
-                <textarea name="replyContent" placeholder="Write a reply..."></textarea>
-                <button type="submit" class="button">Post Reply</button>
-              </form>
-            </div>
-          </div>
-        </li>
-       </ul>
       </div>
     </div>
-    <div class="tweet">
-        <div class="tweet-header">
-          <img src="pexels-photo-10669639.jpg" alt="ProfilePic2" width="50" height="50"> 
-          <div>
-            <span class="username">Jane Doe</span>
-            <span class="handle">@janedoe</span>
-          </div>
-        </div>
-        <div class="tweet-content">
-          <p>DevOps sounds great in theory, but "The Phoenix Project" paints an unrealistic picture of its implementation. While the book was an entertaining read, it glosses over the fact that companies attempting DevOps often rely on the same teams that created their legacy nightmares, and it ignores the reality that truly skilled techs would bail on a toxic work environment like the one depicted. In my experience, successful DevOps requires an exceptional talent pool that many struggling companies simply don't have - you need more than just one "Brent" to make it work.</p>
-        </div>
-        <div class="tweet-footer">
-            <button class="button like-button" onclick="likePost(this)">Like</button>
-            <button class="button retweet-button" onclick="retweetPost(this)">Retweet</button>
-            <button class="button reply-button" onclick="replyPost(this)">Reply</button>
-          </div>
-          <div class="reply-section" style="display: none;">
-            <textarea placeholder="Write a reply..."></textarea>
-            <button class="button" onclick="postReply(this)">Post Reply</button>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div class="footer">
       <p>&copy; 2024 ShareSpace. All rights reserved.</p>
       <button class="settings-button">
