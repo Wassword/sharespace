@@ -92,7 +92,29 @@
        </ul>
       </div>
     </div>
-
+    <div class="tweet">
+        <div class="tweet-header">
+          <img src="pexels-photo-10669639.jpg" alt="ProfilePic2" width="50" height="50"> 
+          <div>
+            <span class="username">Jane Doe</span>
+            <span class="handle">@janedoe</span>
+          </div>
+        </div>
+        <div class="tweet-content">
+          <p>DevOps sounds great in theory, but "The Phoenix Project" paints an unrealistic picture of its implementation. While the book was an entertaining read, it glosses over the fact that companies attempting DevOps often rely on the same teams that created their legacy nightmares, and it ignores the reality that truly skilled techs would bail on a toxic work environment like the one depicted. In my experience, successful DevOps requires an exceptional talent pool that many struggling companies simply don't have - you need more than just one "Brent" to make it work.</p>
+        </div>
+        <div class="tweet-footer">
+            <button class="button like-button" onclick="likePost(this)">Like</button>
+            <button class="button retweet-button" onclick="retweetPost(this)">Retweet</button>
+            <button class="button reply-button" onclick="replyPost(this)">Reply</button>
+          </div>
+          <div class="reply-section" style="display: none;">
+            <textarea placeholder="Write a reply..."></textarea>
+            <button class="button" onclick="postReply(this)">Post Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="footer">
       <p>&copy; 2024 ShareSpace. All rights reserved.</p>
       <button class="settings-button">
