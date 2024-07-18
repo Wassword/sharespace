@@ -18,70 +18,47 @@
       <h1>ShareSpace</h1>
     </div>
 
-  <div class="sidebar">
-    <a href="Profile.html" class="back-link"><i class="fas fa-arrow-left"></i> Profile</a>
-    <h2>Ace Ventura</h2>
-    <p>@AceVentura</p>
-    <div class="navbar">
-      <a href="#"><i class="fas fa-home"></i> Home</a>
-      <a href="#"><i class="fas fa-compass"></i> Explore</a>
-      <a href="#"><i class="fas fa-bell"></i> Notifications</a>
-      <a href="#"><i class="fas fa-envelope"></i> Messages</a>
-    </div>
-  </div>
-    <div class="main-content">
-      <div class="write-post">
-        <textarea placeholder="Write a post..."></textarea>
-        <button class="button">Post</button>
-      </div>
-      <div class="tweet">
-        <div class="tweet-header">
-          <img src="employee_image_mikno49.jpeg" alt="ProfilePic1" width="50" height="50">
-          <div>
-            <span class="username">John Doe</span>
-            <span class="handle">@johndoe</span>
-          </div>
-        </div>
-        <div class="tweet-content">
-          <p>"The End of Nature" by Bill McKibben examines human impact on the environment, focusing on climate change.<br>
-            Published over a decade ago, McKibben's warnings about global warming have proven accurate, with recent years seeing record temperatures.<br>
-            He argues human activities have disrupted Earth's natural balance, altering climate patterns.<br>
-            McKibben challenges the idea of nature's independence, urging recognition of our influence and warning against exploitation.<br>
-            The book calls for reconsideration of unsustainable practices to protect our interconnected environment.</p>
-        </div>
-        <div class="tweet-footer">
-          <button class="button">Like</button>
-          <button class="button">Retweet</button>
-          <button class="button">Reply</button>
+    <div class="content">
+      <div class="sidebar">
+        <h2>Profile</h2>
+        <p>@username</p>
+        <div class="navbar">
+          <a href="#"><i class="fas fa-home"></i> Home</a>
+          <a href="#"><i class="fas fa-compass"></i> Explore</a>
+          <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+          <a href="#"><i class="fas fa-envelope"></i> Messages</a>
         </div>
       </div>
-      
-      <div class="tweet">
-        <div class="tweet-header">
-          <img src="pexels-photo-10669639.jpg" alt="ProfilePic2" width="50" height="50"> 
-          <div>
-            <span class="username">Jane Doe</span>
-            <span class="handle">@janedoe</span>
-          </div>
+
+      <div class="main-content">
+        <div class="write-post">
+          <textarea placeholder="Write a post..."></textarea>
+          <button class="button">Post</button>
         </div>
-        <div class="tweet-content">
-          <p>
-            I'm currently reading "The End of Nature," recommended by my less bookish sister.<br>
-            I was impressed by Bill McKibben's eloquence and insight when he published it.<br>
-            Now, the beauty of his writing on nature and humanity's impact strikes me.<br>
-            Themes of separateness, boundaries, and humility resonate deeply.<br>
-            His concerns about global warming in 1989 feel eerily current.<br>
-            Recently delved into "Earth," "Deep Economy," and "Enough"—each eye-opening.<br>
-            McKibben's passion and urgency to address these issues are inspiring.</p>
+
+        <div class="tweet">
+          <div class="tweet-header">
+            <img src="employee_image_mikno49.jpeg" alt="ProfilePic1" width="50" height="50">
+            <div>
+              <span class="username">John Doe</span>
+              <span class="handle">@johndoe</span>
+            </div>
           </div>
-        <div class="tweet-footer">
-          <button class="button">Like</button>
-          <button class="button">Retweet</button>
-          <button class="button">Reply</button>
+          <div class="tweet-content">
+            
+          </div>
+          <div class="tweet-footer">
+            <button class="button like-button" onclick="likePost(this)">Like</button>
+            <button class="button retweet-button" onclick="retweetPost(this)">Retweet</button>
+            <button class="button reply-button" onclick="replyPost(this)">Reply</button>
+          </div>
+          <div class="reply-section" style="display: none;">
+            <textarea placeholder="Write a reply..."></textarea>
+            <button class="button" onclick="postReply(this)">Post Reply</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
     <div class="footer">
       <p>&copy; 2024 ShareSpace. All rights reserved.</p>
