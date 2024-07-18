@@ -20,6 +20,41 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
+.tweet-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#buttonBox{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.delete-button {
+    width: 20px;
+    height: 20px;
+    background: url('images/Trash\ Can.png') no-repeat center center ;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.edit-button {
+    width: 20px;
+    height: 20px;
+    background: url('images/edit-button.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.edit-button:focus {
+    outline: none;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
