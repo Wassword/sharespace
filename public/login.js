@@ -54,7 +54,7 @@ function login() {
         alert('Invalid username or password');
     }
 }
-function logOut() {
-    sessionStorage.removeItem('loggedInUser');
-    window.location.href = 'login.html'; 
-}
+// function logOut() {
+//     sessionStorage.removeItem('loggedInUser');
+//     window.location.href = 'login.html'; 
+// }
