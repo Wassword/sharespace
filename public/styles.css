@@ -1,7 +1,7 @@
 
     body {
         font-family: 'Open Sans', sans-serif;
-        background-color: #F5F8FA;
+        background-color: white;
         color: #14171A;
         margin: 0;
         padding: 0;
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .footer {
-        background-color: #F5F8FA;
+        background-color: white;
         text-align: left;
         padding: 20px;
         border-top: 1px solid #E1E8ED;
